@@ -1,0 +1,12 @@
+language: java
+jdk:
+  - openjdk9
+sudo: enabled
+services:
+  - mysql
+before_install:
+  - sudo mysql -e 'DROP DATABASE IF EXISTS bugreporttest;'
+  - sudo mysql -e 'CREATE DATABASE bugreporttest;'
+  - sudo mysql < "createDB.sql"
+  - sudo mysql < "populateDB.sql"
+script: mvn clean verify
