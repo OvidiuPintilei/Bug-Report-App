@@ -1,4 +1,4 @@
-use bugreporttest;
+use bugReportTest;
 
 INSERT INTO employee (name, role) VALUES ("Pintilei Ovidiu", "programmer");
 INSERT INTO employee (name, role) VALUES ("Grab Matei", "programmer");
