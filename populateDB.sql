@@ -1,3 +1,5 @@
+use bugreporttest;
+
 INSERT INTO employee (name, role) VALUES ("Pintilei Ovidiu", "programmer");
 INSERT INTO employee (name, role) VALUES ("Grab Matei", "programmer");
 INSERT INTO employee (name, role) VALUES ("Bura Andreea", "architect");
